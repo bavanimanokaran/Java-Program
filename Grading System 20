@@ -1,0 +1,45 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+import java.util.Scanner;
+public class Solution {
+public static void main(String[] args) {
+    Scanner sc=new Scanner(System.in);
+    String a=sc.next();
+    int b=sc.nextInt();
+    int c=sc.nextInt();
+    int d=sc.nextInt();
+    int e=sc.nextInt();
+    int f=sc.nextInt();
+    int t=(b+c+d+e+f);
+    float x=(float)t/5;
+    System.out.println("Name of the Student:"+a);
+    System.out.println("Total Mark:"+t);
+    System.out.print("Average Mark:");
+    System.out.printf("%.1f",x);
+    System.out.print("\nGrade Mark:");
+    if(x==100){
+        System.out.println('S');
+    }
+    else if(x>=90 && x<100){
+        System.out.println('A');
+    }
+    else if(x>=80 && x<=89){
+        System.out.println('B');
+    }
+    else if(x>=70 &&x<=79){
+        System.out.println('C');
+    }
+    else if(x>=60 && x<=69){
+        System.out.println('D');
+    }
+    else if(x>=50 && x<=59){
+        System.out.println('E');
+    }
+    else{
+        System.out.println("Fail");
+    }   
+    }
+}
