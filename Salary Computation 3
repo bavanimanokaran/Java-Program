@@ -1,0 +1,23 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+public static void main(String[] args) {
+    Scanner sc=new Scanner(System.in);
+    double r=sc.nextDouble();
+    if(r<15000){
+        double b=0.15*r+0.90*r;
+        double c=r+b;
+        System.out.printf("%.2f\n",c);
+         }
+    else{
+        double d=5000*r+0.98*r;
+        double e=r+d;
+        System.out.printf("%.2f\n",e);
+    }
+   /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    }
+}
