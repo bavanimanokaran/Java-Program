@@ -1,0 +1,22 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+import java.util.Scanner;
+public class Solution {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int num = sc.nextInt();
+        
+        if (num < 10) {
+            System.out.println("STDOUT");
+            return;
+        }
+        String numStr = Integer.toString(num);
+        char firstDigit = numStr.charAt(0);
+        char secondDigit = numStr.charAt(1);
+        String swappedStr = "" + secondDigit + firstDigit;
+        System.out.println(Integer.parseInt(swappedStr));
+    }
+}
